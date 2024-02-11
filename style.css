@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#dcd9d5;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+app-layout {
+    max-width:1200px;
+    width:80%;
+    margin:5em auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr auto;
+    min-height: 80vh;
+    box-shadow: inset;
+}
+custom-sidebar {
+    grid-row: 1 / span 2;
+    background-color: #beb9b1;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 2em;
+}
+custom-header {
+    grid-column: 2;
+    background-color: #ffffff;
+    padding:.8em;
+    border-top-right-radius: 25px;
+}
+main-content {
+    grid-column: 2; 
+    grid-row: 2;
+    background-color: #f8f9f7;
+    padding:0 2em;
+    border-bottom-right-radius: 25px;
+}
